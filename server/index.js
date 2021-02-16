@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import userRouter from "./routes/user.route.js";
 
 dotenv.config();
 
@@ -18,6 +19,8 @@ mongoose.connect(process.env.DB_ID, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+app.use("/auth", userRouter);
 
 app.listen(PORT, () => {
   console.log("server is running");

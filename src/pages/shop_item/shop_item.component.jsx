@@ -6,14 +6,14 @@ import styles from "./shop_item.module.css";
 
 const ShopItem = (props) => {
   const match = useRouteMatch();
-  const title = match.params.title;
+  const routeName = match.params.title;
   const id = match.params.shopId;
 
   return (
     <div className={styles.main}>
       <div className={styles.shopItem}>
-        <ItemImage title={title} id={id} />
-        <Size title={title} id={id} />
+        <ItemImage routeName={routeName} id={id} />
+        <Size routeName={routeName} id={id} />
       </div>
     </div>
   );

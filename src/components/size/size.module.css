@@ -27,13 +27,13 @@
   font-weight: bold;
 }
 
-.buyText {
-  font-size: 15px;
+.price {
+  font-size: 22px;
   font-weight: bold;
   margin: 30px 0;
 }
 
-.priceBtn {
+.cartBtn {
   outline: none;
   border: none;
   background-color: rgb(224, 24, 24);
@@ -48,7 +48,11 @@
   cursor: pointer;
 }
 
-.priceBtn:hover {
+.sizeBtn:visited {
+  color: red;
+}
+
+.cartBtn:hover {
   cursor: pointer;
   opacity: 0.8;
 }

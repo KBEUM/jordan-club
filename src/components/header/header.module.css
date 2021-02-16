@@ -30,7 +30,7 @@ a {
   font-style: italic;
   font-size: 1.8rem;
   font-weight: bold;
-  margin-right: 2rem;
+  margin-right: 100px;
 }
 
 .option {
@@ -40,12 +40,14 @@ a {
   font-weight: bold;
 }
 
-.account {
+.account,
+.cart {
   color: grey;
   font-size: 13px;
   font-weight: bold;
 }
 
-.account:hover {
+.account:hover,
+.cart:hover {
   color: black;
 }

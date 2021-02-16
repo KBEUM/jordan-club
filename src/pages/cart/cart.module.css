@@ -1,0 +1,61 @@
+.cart {
+  padding-top: 100px;
+  width: 1100px;
+  /* background-color: white; */
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.title {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.name {
+  width: 450px;
+  text-align: center;
+}
+
+.size {
+  width: 150px;
+  text-align: center;
+}
+
+.quantity {
+  width: 150px;
+  text-align: center;
+}
+
+.price {
+  width: 150px;
+  text-align: center;
+}
+
+.btn {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.title,
+.name,
+.size,
+.quantity,
+.price {
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.total {
+  padding-top: 20px;
+  padding-bottom: 400px;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: right;
+  margin-right: 20px;
+}

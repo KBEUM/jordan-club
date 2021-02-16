@@ -3,7 +3,7 @@ import CreateAccount from "../../components/create_account/create_account.compon
 import Login from "../../components/login/login.component";
 import styles from "./account.module.css";
 
-const Account = (props) => {
+const Account = () => {
   const [change, setChange] = useState(true);
   const onChange = () => {
     setChange(!change);

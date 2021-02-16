@@ -1,20 +1,18 @@
 import React from "react";
+import { connect } from "react-redux";
 import styles from "./item_image.module.css";
-import data from "../../redux/shop/data";
 
-const ItemImage = ({ title, id }) => {
+const ItemImage = ({ shopData, routeName, id }) => {
+  const item = shopData[routeName].items.find((item) => item.id == id);
+
   return (
     <div className={styles.itemImage}>
-      <h2 className={styles.name}>
-        {data[title].items.find((item) => item.id == id).name}
-      </h2>
-      <img
-        src={data[title].items.find((item) => item.id == id).imageUrl}
-        alt="jordan1"
-        className={styles.img}
-      />
+      <h2 className={styles.name}>{item.name}</h2>
+      <img src={item.imageUrl} alt="jordan1" className={styles.img} />
     </div>
   );
 };
 
-export default ItemImage;
+const mapStateToProps = (state) => ({ shopData: state.shopData });
+
+export default connect(mapStateToProps)(ItemImage);

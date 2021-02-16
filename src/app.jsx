@@ -7,6 +7,7 @@ import Account from "./pages/account/account.component";
 import Homepage from "./pages/homepage/homepage.component";
 import Shop from "./pages/shop/shop.component";
 import ShopItem from "./pages/shop_item/shop_item.component";
+import Cart from "./pages/cart/cart.component";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/shop/:title" component={Shop} />
         <Route exact path="/shop/:title/:shopId" component={ShopItem} />
         <Route exact path="/account" component={Account} />
+        <Route exact path="/cart" component={Cart} />
       </Switch>
       <Footer />
     </div>
