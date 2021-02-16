@@ -1,0 +1,17 @@
+.shop {
+  padding-top: 60px;
+  margin: auto;
+}
+
+.itemList {
+  width: 1200px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 400px;
+}
+
+.result {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}

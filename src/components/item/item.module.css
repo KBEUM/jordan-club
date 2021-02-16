@@ -1,0 +1,36 @@
+.item {
+  width: 280px;
+  height: 360px;
+  background-color: white;
+  margin: 12px 0;
+  margin-right: 20px;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+}
+
+.text {
+  font-weight: bold;
+  margin: 16px;
+  position: relative;
+}
+
+.title {
+  color: grey;
+  font-size: 12px;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.price {
+  font-size: 16px;
+  position: absolute;
+  top: 90px;
+}

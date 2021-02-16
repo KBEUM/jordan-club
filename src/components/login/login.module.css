@@ -1,0 +1,61 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 460px;
+  margin: auto;
+  background-color: white;
+  flex: 1 0 auto;
+}
+
+.login {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 30px 30px 0 30px;
+}
+
+.login::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.textInput {
+  margin: 30px 30px;
+}
+
+.text {
+  color: grey;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+input {
+  width: 425px;
+  font-size: 14px;
+  height: 36px;
+  padding-left: 10px;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.createBtn,
+.loginBtn {
+  width: 439px;
+  height: 45px;
+  margin: 30px 30px;
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.createBtn:hover,
+.loginBtn:hover {
+  cursor: pointer;
+  background-color: rgb(245, 244, 244);
+}

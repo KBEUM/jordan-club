@@ -1,0 +1,11 @@
+.footer {
+  background-color: black;
+  background-image: url("https://i.ibb.co/KVbvbLk/footer.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

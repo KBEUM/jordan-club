@@ -1,0 +1,11 @@
+.main {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 460px;
+}
+
+.shopItem {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
