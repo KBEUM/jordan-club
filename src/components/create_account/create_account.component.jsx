@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./create_account.module.css";
+import axios from "axios";
 
 const CreateAccount = ({ onChange }) => {
+  useEffect(() => {
+    axios.get("http://localhost:5000/create").then((res) => console.log(res));
+  });
+
   const onClick = (event) => {
     event.preventDefault();
     onChange();
