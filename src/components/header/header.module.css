@@ -51,3 +51,17 @@ a {
 .cart:hover {
   color: black;
 }
+
+.logoutBtn {
+  background-color: white;
+  color: grey;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logoutBtn:hover {
+  cursor: pointer;
+  color: black;
+}

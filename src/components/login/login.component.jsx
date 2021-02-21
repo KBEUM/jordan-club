@@ -28,6 +28,7 @@ const Login = ({ onChange, loginUser }) => {
       if (res.payload.loginSucess) {
         histroy.push("/");
       }
+      alert("Email or password not correct.");
     });
   };
 
@@ -61,11 +62,6 @@ const Login = ({ onChange, loginUser }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   loginUser: (body) => dispatch(loginUser(body)),
-  // .then((res) => {
-  //   if (res.payload.loginSucess) {
-  //     history.push("/");
-  //   }
-  // }),
 });
 
 export default connect(null, mapDispatchToProps)(Login);

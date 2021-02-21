@@ -3,9 +3,9 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const userSchema = new mongoose.Schema({
-  name: { type: String, require: true },
-  email: { type: String, trim: true, unique: 1, require: true },
-  password: { type: String, require: true },
+  name: { type: String, required: true },
+  email: { type: String, trim: true, unique: 1, required: true },
+  password: { type: String, required: true },
   token: { type: String },
 });
 
@@ -34,16 +34,6 @@ userSchema.methods.checkPassword = async function (plainPassword, cb) {
     console.log(isMatch);
     if (err) return cb(err);
     cb(null, isMatch);
-  });
-};
-
-userSchema.methods.generateToken = function (cb) {
-  const user = this;
-  let token = jwt.sign(user._id.toHexString(), "secretToken");
-  user.token = token;
-  user.save(function (err, user) {
-    if (err) return cb(err);
-    cb(null, user);
   });
 };
 
