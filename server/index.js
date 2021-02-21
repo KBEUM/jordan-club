@@ -18,6 +18,10 @@ app.use(cookieParser());
 
 app.use("/account", userRouter);
 
+app.get("/", (req, res) => {
+  res.send("deploy test");
+});
+
 mongoose.connect(process.env.DB_ID, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
