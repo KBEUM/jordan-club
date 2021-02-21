@@ -26,7 +26,7 @@ const Login = ({ onChange, loginUser }) => {
     };
     loginUser(body).then((res) => {
       if (res.payload.loginSucess) {
-        histroy.push("/");
+        return histroy.push("/");
       }
       alert("Email or password not correct.");
     });
