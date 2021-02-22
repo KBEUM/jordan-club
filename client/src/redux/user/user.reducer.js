@@ -1,11 +1,11 @@
-const InitialState = {};
+const InitialState = { loginSuccess: {} };
 
 const userReducer = (state = InitialState, action) => {
   switch (action.type) {
     case "loginUser":
       return { ...state, loginSuccess: action.payload };
     case "logoutUser":
-      return {};
+      return { loginSuccess: {} };
     default:
       return state;
   }

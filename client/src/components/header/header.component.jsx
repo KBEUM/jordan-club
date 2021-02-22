@@ -5,8 +5,6 @@ import { logoutUser } from "../../redux/user/user.action";
 import styles from "./header.module.css";
 
 const Header = ({ cartItems, user, logoutUser }) => {
-  console.log(user.loginSuccess);
-
   const onLogout = () => {
     logoutUser();
   };
@@ -27,7 +25,7 @@ const Header = ({ cartItems, user, logoutUser }) => {
           <Link className={styles.cart} to="/cart">
             Cart ({cartItems.length})
           </Link>
-          {!user.loginSuccess ? (
+          {!user.loginSuccess.loginSucess ? (
             <Link className={styles.account} to="/account">
               Account
             </Link>

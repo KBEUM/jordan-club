@@ -2,6 +2,7 @@ import React from "react";
 import HomeItemList from "../../components/home_item_list/home_item_list.component";
 import styles from "./homepage.module.css";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Homepage = ({ shopData }) => {
   return (
@@ -9,9 +10,9 @@ const Homepage = ({ shopData }) => {
       <section className={styles.poster}>
         <div className={styles.name}>
           <h1 className={styles.name_text}>AIR JORDAN 1 RETRO 'BANNED'</h1>
-          <a className={styles.shop_text} href="/shop/jordan1/4">
+          <Link className={styles.shop_text} to="/shop/jordan1/4">
             SHOP NOW
-          </a>
+          </Link>
         </div>
       </section>
       <section className={styles.firstList}>

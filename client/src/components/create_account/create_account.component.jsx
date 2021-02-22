@@ -31,7 +31,10 @@ const CreateAccount = ({ onChange }) => {
       email: email,
       password: password,
     };
-    axios.post("http://localhost:5000/account/create", body).then(onChange());
+
+    axios
+      .post("https://jordan-club-server.herokuapp.com/account/create", body)
+      .then(onChange());
   };
 
   const onClick = (event) => {
